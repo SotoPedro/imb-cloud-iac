@@ -1,1 +1,32 @@
-### Terraform on IBM cloud exercises Repo
+## Terraform on IBM cloud exercises Rep
+
+***
+Commands to start each folder and deploy the corresponding resources:
+
+#### Command to start project
+
+```console
+$ terraform init
+```
+
+#### Command to preview the resources to be deployed in cloud
+
+```console
+$ terraform plan
+```
+
+#### Command to deploy the resources
+Only run this command if we consider that the state is going to match what we are attempting to dpeloy (it will also show us a plan before applying the changes)
+
+```console
+$ terraform apply
+```
+
+In case that there are no need to review previewed plna we can executed the following command to avoid the plan
+
+```console
+$ terraform apply --auto-aprove=true
+```
+
+### Additional information
+All variable content inside the `.tfvars` are just dummy data, none of this is real values for variable, if needed, replace them with the corresponding values that are provided by the used cloud in order to deploy our infrastructure before applying the changes
